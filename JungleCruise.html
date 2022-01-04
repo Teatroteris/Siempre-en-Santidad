@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="JungleCruise.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siempre en Santidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="toggle"><a href="#"><img class="menu" src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Siempre en Santidad</span></h2>
+            <p>
+                Después de tener un gran acercamiento con Jesús, la madre Eugenia debe hacer un catecismo y proteger a Jesús Eucaristía
+                 en tiempos de la 2° guerra mundial. ¿ Sera posible que logre cumplir con el mandato del Señor ? Descubrelo ....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">mirar ahora</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="https://rr4---sn-q4fl6ns7.c.drive.google.com/videoplayback?expire=1641346108&ei=_LvUYaiRI8v5-LYP2PKp8Ak&ip=2001:1260:201:130:91d6:c63b:cf4b:b477&cp=QVRJU0RfVVFOSVhPOjVsUVowYW9uWW41QU1DMkhCa3JzNFI4Z3VrY2RCNHdnZG80T3VuaFUzS1U&id=75f1a4f5a4520994&itag=18&source=webdrive&requiressl=yes&mh=pl&mm=32&mn=sn-q4fl6ns7&ms=su&mv=m&mvi=4&pl=50&ttl=transient&susc=dr&driveid=1UJ7qotI9RJjRdJk9fXr44iLMSShXK6CZ&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=395.064&lmt=1641184965006363&mt=1641331228&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAM8O4NE2tTSWIdHtdBv_wB_NOTsoQvgMtrDsAn9yyMyxAiEA_6zvpeVpxB8DLfb9XbjZT4WvjtBgwZkSWEux5qkhTk4=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAKTDrxSHVQEx2t2amUcP-5TJsRLnHpQqscpC443k8iSdAiBdone6zXEvHPleJXxVgxzLvnlygsqK2P-a4tafxCRjxw==&cpn=tBxuPEymaCrow7hO&c=WEB_EMBEDDED_PLAYER&cver=1.20211215.00.01" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+</script>
+</body>
+</html>
